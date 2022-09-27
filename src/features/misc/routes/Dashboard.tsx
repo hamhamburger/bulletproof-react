@@ -1,4 +1,6 @@
 import { ContentLayout } from '@/components/Layout';
+// eslint-disable-next-line no-restricted-imports
+import Logout from '@/features/misc/components/Logout';
 import { useAuth } from '@/lib/auth';
 import { ROLES } from '@/lib/authorization';
 
@@ -28,6 +30,7 @@ export const Dashboard = () => {
           <li>Delete all comments</li>
         </ul>
       )}
+      <Logout />
     </ContentLayout>
   );
 };
